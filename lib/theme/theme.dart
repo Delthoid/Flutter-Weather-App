@@ -4,17 +4,15 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'colors.dart';
 
-enum ThemeMode {light, dark}
+enum ThemeMode { light, dark }
 
-class AppTheme extends ChangeNotifier {
-
+class AppThemeConfig extends ChangeNotifier {
   var _themeMode = ThemeMode.light;
-  
+
   //Default theme
   static ThemeData lightTheme() => ThemeData(
-    primarySwatch: MaterialColor(0XFF5256E8, primaryColor),
-    fontFamily: GoogleFonts.montserrat().fontFamily,
-  );
+      primarySwatch: MaterialColor(0XFF5256E8, primaryColor),
+      fontFamily: GoogleFonts.overpass().fontFamily);
 
   static ThemeData darkTheme() => ThemeData();
 
@@ -26,9 +24,7 @@ class AppTheme extends ChangeNotifier {
     return _themeMode == ThemeMode.light ? lightTheme() : darkTheme();
   }
 
-  void setThemeMode(ThemeMode themeMode){
+  void setThemeMode(ThemeMode themeMode) {
     _themeMode = themeMode;
   }
-
-  
 }
