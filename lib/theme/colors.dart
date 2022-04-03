@@ -12,3 +12,6 @@ Map<int, Color> primaryColor = {
   800: const Color.fromRGBO(82, 86, 232, .9),
   900: const Color.fromRGBO(82, 86, 232, 1),
 };
+
+const blue = Color(0XFF4A92FE);
+const lighBlue = Color(0XFF47BEDF);

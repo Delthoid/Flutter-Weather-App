@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import '../screens/screens_index.dart';
 
 class Routing {

@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
       theme: appThemeData.currentAppTheme,
       initialRoute: '/',
       routes: routing.routes,
+      debugShowCheckedModeBanner: false,
     );
   }
 }
