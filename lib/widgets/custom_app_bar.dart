@@ -1,5 +1,7 @@
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:neu_weather/theme/styles.dart';
+
 
 class CustomAppBarTitle extends StatefulWidget {
   const CustomAppBarTitle({
@@ -7,11 +9,13 @@ class CustomAppBarTitle extends StatefulWidget {
     required this.leading,
     required this.title,
     required this.trailing,
+    required this.showChevron,
   }) : super(key: key);
 
   final Widget leading;
   final Widget title;
   final Widget trailing;
+  final bool showChevron;
 
   @override
   State<CustomAppBarTitle> createState() => _CustomAppBarState();
@@ -23,21 +27,18 @@ class _CustomAppBarState extends State<CustomAppBarTitle> {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.start,
-      children: const [
-        Icon(EvaIcons.pinOutline),
-        SizedBox(
+      children:  [
+        widget.leading,
+        const SizedBox(
           width: 18,
         ),
-        Text(
-          'Manila',
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-        ),
-        SizedBox(
+        widget.title,
+        const SizedBox(
           width: 18,
         ),
-        Icon(EvaIcons.chevronDownOutline),
-        Spacer(),
-        Icon(EvaIcons.bellOutline),
+        widget.showChevron ? const Icon(EvaIcons.chevronDownOutline) : const SizedBox.shrink(),
+        const Spacer(),
+        widget.trailing,
       ],
     );
   }

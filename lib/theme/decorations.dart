@@ -10,4 +10,12 @@ class Decorations {
       colors: [lighBlue, blue],
     ),
   );
+
+  BoxDecoration gradientDecorationBW = const BoxDecoration(
+    gradient: LinearGradient(
+      begin: Alignment.topRight,
+      end: Alignment.bottomLeft,
+      colors: [Colors.white, Color.fromARGB(255, 197, 197, 197)],
+    ),
+  );
 }

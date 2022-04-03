@@ -15,3 +15,4 @@ Map<int, Color> primaryColor = {
 
 const blue = Color(0XFF4A92FE);
 const lighBlue = Color(0XFF47BEDF);
+const blueCard = Color(0XFF80C1F5);
