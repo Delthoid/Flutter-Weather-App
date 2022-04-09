@@ -17,6 +17,14 @@ dependencies:
   google_fonts: ^2.3.1
   weather_icons: ^3.0.0
   eva_icons_flutter: ^3.1.0
+  animations: ^2.0.2
+  badges: ^2.0.2
+  flutter_svg: ^1.0.3
+  intl: ^0.17.0
+  http: ^0.13.4
+  location: ^4.3.0
+  path_drawing: ^1.0.0
+  flutter_neumorphic: ^3.2.0
 
 dev_dependencies:
   flutter_test:
@@ -28,3 +36,10 @@ flutter:
   uses-material-design: true
   assets:
     - assets/cloudy_large.png
+    - assets/sunny.svg
+    - assets/rain.svg
+    - assets/thunder.svg
+    - assets/cloudy.svg
+    - assets/sun_cloudy.svg
+    - assets/map.png
+    - assets/background.png

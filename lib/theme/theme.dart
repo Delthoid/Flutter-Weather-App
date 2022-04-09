@@ -11,8 +11,16 @@ class AppThemeConfig extends ChangeNotifier {
 
   //Default theme
   static ThemeData lightTheme() => ThemeData(
-      primarySwatch: MaterialColor(0XFF5256E8, primaryColor),
-      fontFamily: GoogleFonts.overpass().fontFamily);
+        primarySwatch: MaterialColor(0XFF5256E8, primaryColor),
+        fontFamily: GoogleFonts.overpass().fontFamily,
+        scrollbarTheme: ScrollbarThemeData(
+          isAlwaysShown: true,
+          thickness: MaterialStateProperty.all(10),
+          thumbColor: MaterialStateProperty.all(Colors.white),
+          radius: const Radius.circular(10),
+          minThumbLength: 100,
+        ),
+      );
 
   static ThemeData darkTheme() => ThemeData();
 

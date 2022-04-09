@@ -14,5 +14,10 @@ Map<int, Color> primaryColor = {
 };
 
 const blue = Color(0XFF4A92FE);
-const lighBlue = Color(0XFF47BEDF);
+const lighBlue = Color(0XFF5CDAFF);
 const blueCard = Color(0XFF80C1F5);
+const titleColor = Color(0XFF444E72);
+
+const textFocus = Color(0XFF444E72);
+const greyedText = Color(0XFF838BAA);
+const highlightColor = Color(0XFFE0F6FD);
