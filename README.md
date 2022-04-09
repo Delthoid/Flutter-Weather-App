@@ -1,6 +1,17 @@
-# neu_weather
+# Weather App ⛅
 
-A new Flutter project.
+<img src="/screenshots/homescreen_weather.png?pick=true" width="222" height="480">
+<img src="/screenshots/details_screen.png?pick=true" width="222" height="480">
+<img src="/screenshots/notification_menu.png?pick=true" width="222" height="480">
+
+<br><br>
+Design by: <a href="https://www.figma.com/@maulana">Maulana Farhan Najib</a>
+<br>
+Design file: https://www.figma.com/community/file/885501292477669105
+<br>
+
+API Used: https://www.weatherbit.io/
+You will need to provide your own API key
 
 ## Getting Started
 
