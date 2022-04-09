@@ -1,6 +1,10 @@
 # Weather App ⛅
 
+<p float="left>
 <img src="/screenshots/homescreen_weather.png?pick=true" width="222" height="480">
+                                                                                 <img src="/screenshots/homescreen_weather.png?pick=true" width="222" height="480">
+                                                                                 <img src="/screenshots/homescreen_weather.png?pick=true" width="222" height="480">
+          </p>
 
 <br><br>
 Design by: <a href="https://www.figma.com/@maulana">Maulana Farhan Najib</a>
