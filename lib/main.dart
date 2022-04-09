@@ -62,7 +62,7 @@ class MyApp extends StatelessWidget {
     //getLocation(context);
 
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Weather Flutter',
       theme: appThemeData.currentAppTheme,
       initialRoute: '/',
       routes: routing.routes,

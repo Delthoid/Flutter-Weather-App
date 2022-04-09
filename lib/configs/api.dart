@@ -2,7 +2,7 @@ class WeatherBitIoAPI {
   final String domain = 'api.weatherbit.io';
   final String version = 'v2.0';
   final Uri url = Uri.parse('https://api.openweathermap.org/data/2.5/');
-  final key = 'GET YOUR OWN API KEY BRUH';
+  final key = 'GET YOUR OWN API KEY';
 }
 
 class APIEndpoints {

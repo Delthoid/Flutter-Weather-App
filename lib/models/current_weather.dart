@@ -78,7 +78,7 @@ class Datum {
   final int windDir;
   final String windCdir;
   final String windCdirFull;
-  final double windSpeed;
+  final dynamic windSpeed;
   final double temp;
   final double appTemp;
   final int clouds;

@@ -4,7 +4,7 @@ class AppConfig {
   bool isAndroid = true;
   bool isIos = false;
 
-  final String appName = 'Delts Project';
+  final String appName = 'Weather Flutter ⛅';
 
   getPlatform() {
     if (Platform.isAndroid) {

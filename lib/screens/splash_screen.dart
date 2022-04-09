@@ -6,6 +6,7 @@ import 'package:neu_weather/providers/location_provider.dart';
 import 'package:neu_weather/providers/today_forecast.dart';
 import 'package:neu_weather/routing/router.dart';
 import 'package:neu_weather/routing/routes.dart';
+import 'package:neu_weather/theme/styles.dart';
 import 'package:provider/provider.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -38,43 +39,29 @@ class _SplashScreenState extends State<SplashScreen> {
     final appConfig = AppConfig();
     final router = AppRouter(context: context);
     final routing = Routing();
-
-    //getLocation(context);
-
-    // if (myLocationData.isCompleted) {
-    //   forecastData
-    //       .fetchCurrentWeather(
-    //     lat: myLocationData.locData.latitude!,
-    //     long: myLocationData.locData.latitude!,
-    //   )
-    //       .then(
-    //     (value) {
-    //       var a = myLocationData.locData.latitude;
-    //       var b = myLocationData.locData.longitude;
-    //       if (value.statusCode.toString().contains('20')) {
-    //         isLoading = false;
-    //         Future.delayed(Duration(seconds: 2)).then((value) {
-    //           router.pushNamedAndRemoveUntil('/home');
-    //         });
-    //       }
-    //       return value;
-    //     },
-    //   );
-    // } else {
-    //   isLoading = true;
-    // }
-
-    Future.delayed((const Duration(seconds: 2)))
-        .then((value) => router.pushNamedAndRemoveUntil('/home'));
+    Future.delayed((const Duration(seconds: 2))).then(
+      (value) => router.pushNamedAndRemoveUntil('/home'),
+    );
 
     return Scaffold(
       body: Container(
         color: theme.primaryColor,
         child: Center(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(appConfig.appName),
-              isLoading ? CircularProgressIndicator() : SizedBox.shrink(),
+              Text(
+                appConfig.appName,
+                style: regularText.copyWith(
+                  fontSize: 32,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              isLoading
+                  ? const CircularProgressIndicator()
+                  : const SizedBox.shrink(),
             ],
           ),
         ),

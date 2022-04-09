@@ -94,8 +94,8 @@ class TodayForecastCardState extends State<TodayForecastCard> {
     );
   }
 
-  double msToKmh(double value) {
-    return (3.6 * value);
+  double msToKmh(dynamic value) {
+    return (3.6 * value.toDouble());
   }
 
   @override
